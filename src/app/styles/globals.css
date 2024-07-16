@@ -58,14 +58,15 @@ body {
     left: 0;
     color: rgb(var(--foreground-rgb));
   }
+
   main {
     margin: 3rem 0 3rem 0;
   }
+}
 
-  ::selection {
-    background-color: var(--primary-color);
-    color: rgb(var(--foreground-rgb));
-  }
+::selection {
+  background-color: var(--primary-color);
+  color: rgb(var(--foreground-rgb));
 }
 
 .highlight-text {
@@ -107,8 +108,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10rem;
-  height: 3rem;
+  width: 12rem;
+  height: 10vh;
   background-color: var(--primary-color);
   clip-path: polygon(25% 0%, 100% 0, 75% 100%, 0 100%);
 }

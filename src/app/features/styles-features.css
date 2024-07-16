@@ -9,11 +9,14 @@
 .section-basic-styles1 {
   display: flex;
   flex-direction: row;
-  height: 85vh;
-  width: 50rem;
+  height: auto;
+  width: 80vw;
   align-items: center;
-  padding: 3rem;
+  padding: 6rem 5rem;
   background-color: transparent;
+  .titles {
+    text-align: start;
+  }
 }
 
 @media (max-width: 767px) {
@@ -22,9 +25,13 @@
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 18rem;
+    min-height: fit-content;
+    width: 60vw;
     align-items: center;
     padding: 2rem;
+    .titles {
+      text-align: center;
+    }
   }
 }
 
@@ -32,14 +39,14 @@
   background-color: transparent;
   display: flex;
   flex-direction: column;
-  height: 190vh;
-  width: 50rem;
+  height: auto;
+  width: 80vw;
   align-items: center;
-  padding: 2rem;
+  padding: 5rem 3rem;
   .section-grid {
-    margin-top: 0;
+    width: 80vw;
+    background-color: transparent;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 3rem;
     padding: 0;
   }
 }
@@ -50,13 +57,15 @@
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 18rem;
+    width: 60vw;
     align-items: center;
-    padding: 3rem;
+    padding: 2rem;
     .section-grid {
-      margin-top: 3rem;
+      width: auto;
+      background-color: transparent;
       grid-template-columns: repeat(1, minmax(0, 1fr));
       gap: 5rem;
+      padding: 0;
     }
   }
 }

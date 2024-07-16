@@ -10,7 +10,7 @@ export const GridLayout = () => {
   const href = "/coming-soon-page";
 
   return (
-    <section className="grid h-[100%] section-grid p-[2rem] justify-items-center">
+    <section className="grid h-[100%] section-grid justify-items-center">
       <div className=" grid-content-format">
         <Link href={href} className={linkFormat}>
           <Image

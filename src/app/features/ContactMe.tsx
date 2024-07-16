@@ -11,10 +11,10 @@ export const ContactMe: React.FC = () => {
   return (
     <section className=" section-basic-styles1">
       <div className="w-full text-justify md:text-left mb-0 w-2/2">
-        <h2 className="space-grotesk blinking text-[2.5rem] font-[600]">
+        <h2 className="space-grotesk blinking titles text-[3.5rem] font-[600]">
           Contact me
         </h2>
-        <p className="roboto-mono mb-[1rem]">
+        <p className="roboto-mono mb-[1rem] text-[1.5rem]">
           If you want to talk to me about development or front-end, I invite you
           to visit my{" "}
           <a
@@ -27,7 +27,7 @@ export const ContactMe: React.FC = () => {
           </a>
           .
         </p>
-        <p className="roboto-mono mb-[1rem]">
+        <p className="roboto-mono mb-[1rem] text-[1.5rem]">
           Additionally, we can read each other on{" "}
           <a
             className="highlight-text"
@@ -38,7 +38,7 @@ export const ContactMe: React.FC = () => {
             Medium.
           </a>
         </p>
-        <p className="roboto-mono mb-[1rem]">
+        <p className="roboto-mono mb-[1rem] text-[1.5rem]">
           Or you can head over to my{" "}
           <a
             className="highlight-text"
@@ -56,8 +56,8 @@ export const ContactMe: React.FC = () => {
           src={faceIcon}
           alt="face icon"
           className="dark:invert cursor-pointer"
-          width={200}
-          height={200}
+          width={300}
+          height={300}
           priority
         />
       </div>
