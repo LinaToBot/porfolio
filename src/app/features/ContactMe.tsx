@@ -1,7 +1,11 @@
 // Libraries.
 import Image from "next/image";
+// Fonts.
+import { Space_Grotesk } from "next/font/google";
 // Public.
 import faceIcon from "../../../public/puzzle-human-head.png";
+
+const space = Space_Grotesk({ subsets: ["latin"] });
 
 export const ContactMe: React.FC = () => {
   const linkedinUrl = "https://www.linkedin.com/in/paulina-i-5a7174ba/";
@@ -11,7 +15,9 @@ export const ContactMe: React.FC = () => {
   return (
     <section className=" section-basic-styles1">
       <div className="w-full text-justify md:text-left mb-0 w-2/2">
-        <h2 className="space-grotesk blinking titles text-[3.5rem] font-[600]">
+        <h2
+          className={`${space.className} blinking titles text-[3.5rem] font-[600]`}
+        >
           Contact me
         </h2>
         <p className="mb-[1rem] text-[1.5rem]">

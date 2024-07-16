@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Fonts */
-@font-face {
-  font-family: "Space Grotesk";
-  src: url("/ruta/a/space-grotesk.woff2") format("woff2"),
-    url("/ruta/a/space-grotesk.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-.space-grotesk {
-  font-family: "Space Grotesk", sans-serif;
-}
-
 :root {
   --background-start: 0, 0, 0;
   --foreground-rgb: 255, 255, 255;
