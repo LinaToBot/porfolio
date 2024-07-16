@@ -14,19 +14,6 @@
   font-family: "Space Grotesk", sans-serif;
 }
 
-@font-face {
-  font-family: "Roboto Mono";
-  font-style: normal;
-  font-weight: 400;
-  src: url("https://fonts.gstatic.com/s/robotomono/v9/L0x5DF4xlVMF-BfR8bXMIjPNfKCWmw.woff2")
-      format("woff2"),
-    url("https://fonts.gstatic.com/s/robotomono/v9/L0x5DF4xlVMF-BfR8bXMIjPNfKCWmw.woff")
-      format("woff");
-}
-.roboto-mono {
-  font-family: "Roboto Mono", monospace;
-}
-
 :root {
   --background-start: 0, 0, 0;
   --foreground-rgb: 255, 255, 255;
