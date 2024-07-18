@@ -11,9 +11,7 @@ export const ProjectsSection: React.FC = () => {
   return (
     <section className=" section-basic-styles2">
       <Link href="/coming-soon-page" className="mb-[2.5rem] ">
-        <h2
-          className={`${space.className} text-[2.5rem] font-[600] text-center`}
-        >
+        <h2 className={`${space.className} secondary-title text-center`}>
           Coming soon...
         </h2>
       </Link>
