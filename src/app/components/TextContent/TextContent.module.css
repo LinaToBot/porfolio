@@ -1,5 +1,4 @@
 /*EXTRA SMALL*/
-
 .content {
   padding: 3rem 5rem;
   width: 100%;
@@ -19,6 +18,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin: 0 0 2rem 0;
+  color: aquamarine;
 }
 
 .text {
@@ -39,26 +39,23 @@
   .heading2 {
     font-size: 2rem;
     font-weight: 600;
+    color: rgb(203, 72, 232);
   }
   .text {
     font-size: 1.5rem;
     font-weight: 500;
-    width: 23rem;
   }
 }
 
-/*MEDIUM-LARGE
-
-aqui es donde se hara un diseño diferente. 
-*/
+/*MEDIUM-AND-LARGE*/
 @media (min-width: 769px) and (max-width: 1536px) {
   .content {
     padding: 6.5rem;
   }
   .heading1 {
-    font-size: 4rem;
+    font-size: clamp(2.75rem, 5vw, 4rem);
     font-weight: 700;
-    color: rgb(208, 232, 72);
+    color: #d0e848;
   }
   .heading2 {
     font-size: 2.5rem;
@@ -69,20 +66,27 @@ aqui es donde se hara un diseño diferente.
   .text {
     font-size: 1.75rem;
     font-weight: 500;
-    width: 37rem;
   }
 }
 
-/*EXTRA-LARGE
-
-aqui es donde se hara un diseño diferente. 
-*/
+/*EXTRA-LARGE*/
 @media (min-width: 1537px) {
+  .content {
+    padding: 10rem;
+  }
   .heading1 {
+    font-size: 4rem;
+    font-weight: 700;
     color: rgb(212, 118, 118);
   }
   .heading2 {
-    font-size: 7rem;
+    font-size: 3rem;
     font-weight: 600;
+    width: 30rem;
+    color: rgb(212, 118, 118);
+  }
+  .text {
+    font-size: 1.75rem;
+    font-weight: 500;
   }
 }
