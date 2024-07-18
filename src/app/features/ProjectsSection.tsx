@@ -12,7 +12,7 @@ export const ProjectsSection: React.FC = () => {
     <section className=" section-basic-styles2">
       <Link href="/coming-soon-page" className="mb-[2.5rem] ">
         <h2 className={`${space.className} secondary-title text-center`}>
-          Coming soon...
+          Mini Projects
         </h2>
       </Link>
       <GridLayout />
