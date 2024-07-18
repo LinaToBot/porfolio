@@ -7,7 +7,7 @@ import { Footer } from "./components/Footer/Footer";
 export default function Home() {
   return (
     <>
-      <main className="flex min-h-screen flex-col items-center justify-between mx-[3.5rem] mb-0 h-[100%]">
+      <main className="min-h-screen flex-col items-center justify-between mx-[3.5rem]">
         <Intro />
         <ProjectsSection />
         <ContactMe />
