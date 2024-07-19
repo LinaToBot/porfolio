@@ -1,19 +1,22 @@
 // Libraries.
 import Link from "next/link";
 // Components.
-import { GridLayout } from "./GridLayout/GridLayout";
-// Utils.
-import { space } from "@/app/utils";
+import { ResponsiveGridTemplate } from "../shared/ResponsiveTemplate/ResponsiveTemplate";
+import { GridLayout } from "./ProjectsGrid/ProjectsGrid";
+// Styles.
+import styles from "../shared/ResponsiveTemplate/ResponsiveTemplate.module.css";
 
 export const ProjectsSection: React.FC = () => {
   return (
-    <section className=" section-basic-styles2">
-      <Link href="/coming-soon-page" className="mb-[2.5rem] ">
-        <h2 className={`${space.className} secondary-title text-center`}>
-          Mini Projects
-        </h2>
-      </Link>
-      <GridLayout />
+    <section className={styles.container}>
+      <ResponsiveGridTemplate
+        childrenA={
+          <Link href="/coming-soon-page">
+            <h2>Mini Projects</h2>
+          </Link>
+        }
+        childrenB={<GridLayout />}
+      />
     </section>
   );
 };

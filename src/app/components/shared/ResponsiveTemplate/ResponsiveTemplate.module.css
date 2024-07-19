@@ -1,11 +1,14 @@
-/*EXTRA SMALL*/
+/*DEFAULT STYLES*/
+
+/*ResponsiveTemplate*/
 .container {
   flex-direction: column;
   text-align: center;
   height: 100%;
 }
 
-.responsivePage {
+.responsivePage,
+.responsivePage2 {
   border-bottom: solid 1px #2c2c2c;
 }
 
@@ -13,8 +16,27 @@
   padding: 5rem;
 }
 
+/*ResponsiveGridTemplate*/
+.responsiveTitle {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 5rem 0;
+}
+.responsiveGrid {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
 /*MEDIUM-AND-LARGE*/
 @media (min-width: 1050px) and (max-width: 1536px) {
+  /*ResponsiveTemplate*/
   .container {
     display: flex;
     flex-direction: column;
@@ -39,10 +61,18 @@
     width: 50%;
     align-items: center;
   }
+  /*ResponsiveGridTemplate*/
+  .responsivePage2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 85vh;
+  }
 }
 
 /*EXTRA-LARGE*/
 @media (min-width: 1537px) {
+  /*ResponsiveTemplate*/
   .container {
     display: flex;
     flex-direction: column;
@@ -67,5 +97,12 @@
     justify-content: center;
     width: 50%;
     align-items: center;
+  }
+  /*ResponsiveGridTemplate*/
+  .responsivePage2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 85vh;
   }
 }
