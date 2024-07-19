@@ -1,0 +1,1 @@
+export { ResponsiveTemplate } from "./ResponsiveTemplate";
