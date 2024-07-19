@@ -1,8 +1,8 @@
 // Libraries.
 import Image from "next/image";
 import Link from "next/link";
-// Icon.
-import computerIcon from "../../../../public/puzzle-15.png";
+// Public.
+import computerImage from "../../../../../public/images/puzzle-computer.png";
 
 export const GridLayout = () => {
   const linkFormat =
@@ -15,7 +15,7 @@ export const GridLayout = () => {
       <div className=" grid-content-format">
         <Link href={project1} className={linkFormat}>
           <Image
-            src={computerIcon}
+            src={computerImage}
             alt="computer icon"
             width={200}
             height={200}
@@ -27,7 +27,7 @@ export const GridLayout = () => {
       <div className=" grid-content-format">
         <Link href={href} className={linkFormat}>
           <Image
-            src={computerIcon}
+            src={computerImage}
             alt="computer icon"
             width={200}
             height={200}
@@ -39,7 +39,7 @@ export const GridLayout = () => {
       <div className=" grid-content-format">
         <Link href={href} className={linkFormat}>
           <Image
-            src={computerIcon}
+            src={computerImage}
             alt="computer icon"
             className=""
             width={200}
@@ -52,7 +52,7 @@ export const GridLayout = () => {
       <div className=" grid-content-format">
         <Link href={href} className={linkFormat}>
           <Image
-            src={computerIcon}
+            src={computerImage}
             alt="computer icon"
             className=""
             width={200}
@@ -65,7 +65,7 @@ export const GridLayout = () => {
       <div className=" grid-content-format">
         <Link href={href} className={linkFormat}>
           <Image
-            src={computerIcon}
+            src={computerImage}
             alt="computer icon"
             className=""
             width={200}
@@ -78,7 +78,7 @@ export const GridLayout = () => {
       <div className=" grid-content-format">
         <Link href={href} className={linkFormat}>
           <Image
-            src={computerIcon}
+            src={computerImage}
             alt="computer icon"
             className=""
             width={200}

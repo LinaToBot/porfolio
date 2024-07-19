@@ -1,10 +1,9 @@
 // Components.
-import { Intro } from "./features/Intro/Intro";
-import { ProjectsSection } from "./features/ProjectsSection";
-import { ContactMe } from "./features/ContactMe";
-import { Footer } from "./components/Footer/Footer";
+import { Intro } from "./components/IntroSection";
+import { ProjectsSection } from "./components/ProjectsSection";
+import { ContactMe } from "./components/ContactMeSection";
+import { Footer } from "./components/shared/Footer/Footer";
 
-// min-h-screen flex-col items-center justify-between mx-[3.5rem]
 export default function Home() {
   return (
     <>

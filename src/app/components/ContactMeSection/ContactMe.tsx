@@ -1,11 +1,9 @@
 // Libraries.
 import Image from "next/image";
-// Fonts.
-import { Space_Grotesk } from "next/font/google";
+// Utils.
+import { space } from "@/app/utils";
 // Public.
-import faceIcon from "../../../public/puzzle-human-head.png";
-
-const space = Space_Grotesk({ subsets: ["latin"] });
+import faceImage from "../../../../public/images/puzzle-human-head.png";
 
 export const ContactMe: React.FC = () => {
   const linkedinUrl = "https://www.linkedin.com/in/paulina-i-5a7174ba/";
@@ -59,7 +57,7 @@ export const ContactMe: React.FC = () => {
       </div>
       <div className=" w-full p-4 md: w-1/2 flex justify-center p-4 ">
         <Image
-          src={faceIcon}
+          src={faceImage}
           alt="face icon"
           className="dark:invert cursor-pointer"
           width={300}

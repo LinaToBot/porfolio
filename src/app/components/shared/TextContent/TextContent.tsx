@@ -1,5 +1,5 @@
 // Utils.
-import { space } from "../../utils/utils";
+import { space } from "@/app/utils";
 // Module style.
 import styles from "./TextContent.module.css";
 

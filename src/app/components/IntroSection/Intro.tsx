@@ -2,7 +2,7 @@
 import Image from "next/image";
 // Components.
 import { ResponsiveTemplate } from "@/app/components/shared/ResponsiveTemplate";
-import { TextContent } from "@/app/components/TextContent/TextContent";
+import { TextContent } from "../shared/TextContent";
 // Public.
 import gif from "../../../../public/puzzle-14.gif";
 // Module style.

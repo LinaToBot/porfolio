@@ -1,11 +1,9 @@
 // Libraries.
 import Link from "next/link";
-// Fonts.
-import { Space_Grotesk } from "next/font/google";
 // Components.
-import { GridLayout } from "../components/Grid/Grid";
-
-const space = Space_Grotesk({ subsets: ["latin"] });
+import { GridLayout } from "./GridLayout/GridLayout";
+// Utils.
+import { space } from "@/app/utils";
 
 export const ProjectsSection: React.FC = () => {
   return (
