@@ -8,6 +8,12 @@
   align-items: center;
 }
 
+.headingWhite {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
 .heading1 {
   font-size: 2rem;
   font-weight: 700;
@@ -36,6 +42,11 @@
   .content {
     padding: 6rem;
   }
+  .headingWhite {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+  }
   .heading1 {
     font-size: 3rem;
     font-weight: 700;
@@ -60,6 +71,11 @@
 @media (min-width: 769px) and (max-width: 1536px) {
   .content {
     padding: 6.5rem;
+  }
+  .headingWhite {
+    font-size: clamp(2.75rem, 5vw, 4rem);
+    font-weight: 700;
+    color: #fff;
   }
   .heading1 {
     font-size: clamp(2.75rem, 5vw, 4rem);
@@ -86,6 +102,11 @@
 @media (min-width: 1537px) {
   .content {
     padding: 10rem;
+  }
+  .headingWhite {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
   }
   .heading1 {
     font-size: 4rem;

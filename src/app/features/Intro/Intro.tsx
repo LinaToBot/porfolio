@@ -14,7 +14,7 @@ export const Intro: React.FC = () => {
       <ResponsiveTemplate
         childrenA={
           <TextContent
-            heading1="Hi there!!"
+            headingWhite="Hi there!!"
             paragraphs={
               <>
                 <p className=" mb-[1rem]">
