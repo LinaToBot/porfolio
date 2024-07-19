@@ -1,9 +1,3 @@
-// Libraries.
-
-// Fonts.
-
-// Components.
-
 // Styles.
 import styles from "./page.module.css";
 
