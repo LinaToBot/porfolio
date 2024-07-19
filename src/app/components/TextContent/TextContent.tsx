@@ -1,18 +1,20 @@
-// Module style.
-import styles from "./TextContent.module.css";
 // Utils.
 import { space } from "../../utils/utils";
+// Module style.
+import styles from "./TextContent.module.css";
 
 interface TextContentProps {
   heading1?: string;
   heading2?: string;
-  paragraph: string | React.ReactNode;
+  paragraph?: string | React.ReactNode;
+  paragraphs?: React.ReactNode;
 }
 
 export const TextContent: React.FC<TextContentProps> = ({
   heading1,
   heading2,
   paragraph,
+  paragraphs,
 }) => {
   return (
     <div className={styles.content}>
@@ -23,7 +25,11 @@ export const TextContent: React.FC<TextContentProps> = ({
       >
         {heading1 || heading2}
       </h1>
-      <p className={`${styles.text}`}>{paragraph}</p>
+      {paragraph ? (
+        <p className={styles.text}>{paragraph}</p>
+      ) : (
+        <div className={styles.alternativeText}>{paragraphs}</div>
+      )}
     </div>
   );
 };
