@@ -33,7 +33,7 @@ export const GridLayout = () => {
             height={200}
             priority
           />
-          <p className="roboto-mono">Web project</p>
+          <p className="roboto-mono">Managing State</p>
         </Link>
       </div>
       <div className=" grid-content-format">

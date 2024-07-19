@@ -1,7 +1,5 @@
 // Libraries.
 import Image from "next/image";
-// Module style.
-import styles from "./page.module.css";
 // Component.
 import { TextContent } from "@/app/components/TextContent/TextContent";
 import { Footer } from "@/app/components/Footer/Footer";
@@ -10,6 +8,8 @@ import design from "../../../../public/responsive_design.png";
 import widthImage from "../../../../public/flexible-width.png";
 import limitsImage from "../../../../public/limits.png";
 import breakpointsImage from "../../../../public/breakpoints.png";
+// Module style.
+import styles from "./page.module.css";
 
 const ResponsivePage: React.FC = () => {
   return (
