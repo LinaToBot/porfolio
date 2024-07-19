@@ -4,15 +4,16 @@ import Link from "next/link";
 // Public.
 import computerImage from "../../../../../public/images/puzzle-computer.png";
 // Styles.
-import styles from "./GridLayout.module.css";
+import styles from "./ProjectsGrid.module.css";
 
 export const GridLayout = () => {
   const href1 = "/coming-soon-page";
   const href2 = "/projects/responsive-template";
+  const pStyles = "mb-[2rem]";
 
   return (
-    <section className="grid h-[100%] section-grid justify-items-center">
-      <div className=" grid-content-format">
+    <section className={styles.sectionGrid}>
+      <div className={styles.gridContentFormat}>
         <Link
           href={href2}
           className={`${styles.linkFormat} ${styles.imageHoverEffect}`}
@@ -24,11 +25,14 @@ export const GridLayout = () => {
             height={200}
             priority
           />
-          <p className="roboto-mono">Responsive Template</p>
+          <p className={pStyles}>Responsive Template</p>
         </Link>
       </div>
-      <div className=" grid-content-format">
-        <Link href={href1} className={styles.linkFormat}>
+      <div className={styles.gridContentFormat}>
+        <Link
+          href={href1}
+          className={`${styles.linkFormat} ${styles.imageHoverEffect}`}
+        >
           <Image
             src={computerImage}
             alt="computer icon"
@@ -36,59 +40,67 @@ export const GridLayout = () => {
             height={200}
             priority
           />
-          <p className="roboto-mono">Managing State</p>
+          <p className={pStyles}>To do</p>
         </Link>
       </div>
-      <div className=" grid-content-format">
-        <Link href={href1} className={styles.linkFormat}>
+      <div className={styles.gridContentFormat}>
+        <Link
+          href={href1}
+          className={`${styles.linkFormat} ${styles.imageHoverEffect}`}
+        >
           <Image
             src={computerImage}
             alt="computer icon"
-            className=""
             width={200}
             height={200}
             priority
           />
-          <p className="roboto-mono">Web project</p>
+          <p className={pStyles}>Web project</p>
         </Link>
       </div>
-      <div className=" grid-content-format">
-        <Link href={href1} className={styles.linkFormat}>
+      <div className={styles.gridContentFormat}>
+        <Link
+          href={href1}
+          className={`${styles.linkFormat} ${styles.imageHoverEffect}`}
+        >
           <Image
             src={computerImage}
             alt="computer icon"
-            className=""
             width={200}
             height={200}
             priority
           />
-          <p className="roboto-mono">Web project</p>
+          <p className={pStyles}>Web project</p>
         </Link>
       </div>
-      <div className=" grid-content-format">
-        <Link href={href1} className={styles.linkFormat}>
+      <div className={styles.gridContentFormat}>
+        <Link
+          href={href1}
+          className={`${styles.linkFormat} ${styles.imageHoverEffect}`}
+        >
           <Image
             src={computerImage}
             alt="computer icon"
-            className=""
             width={200}
             height={200}
             priority
           />
-          <p className="roboto-mono">Web project</p>
+          <p className={pStyles}>Web project</p>
         </Link>
       </div>
-      <div className=" grid-content-format">
-        <Link href={href1} className={styles.linkFormat}>
+      <div className={styles.gridContentFormat}>
+        <Link
+          href={href1}
+          className={`${styles.linkFormat} ${styles.imageHoverEffect}`}
+        >
           <Image
             src={computerImage}
             alt="computer icon"
-            className=""
             width={200}
             height={200}
             priority
           />
-          <p className="roboto-mono">Web project</p>
+          <p className={pStyles}>Web project</p>
         </Link>
       </div>
     </section>
