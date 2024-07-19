@@ -6,7 +6,7 @@ import { space } from "../../utils/utils";
 interface TextContentProps {
   heading1?: string;
   heading2?: string;
-  paragraph: string;
+  paragraph: string | React.ReactNode;
 }
 
 export const TextContent: React.FC<TextContentProps> = ({
