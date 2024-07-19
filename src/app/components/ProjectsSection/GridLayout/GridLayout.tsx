@@ -3,17 +3,20 @@ import Image from "next/image";
 import Link from "next/link";
 // Public.
 import computerImage from "../../../../../public/images/puzzle-computer.png";
+// Styles.
+import styles from "./GridLayout.module.css";
 
 export const GridLayout = () => {
-  const linkFormat =
-    "flex flex-col items-center justify-center space-y-0 image-hover-effect";
-  const href = "/coming-soon-page";
-  const project1 = "/projects/responsive-template";
+  const href1 = "/coming-soon-page";
+  const href2 = "/projects/responsive-template";
 
   return (
     <section className="grid h-[100%] section-grid justify-items-center">
       <div className=" grid-content-format">
-        <Link href={project1} className={linkFormat}>
+        <Link
+          href={href2}
+          className={`${styles.linkFormat} ${styles.imageHoverEffect}`}
+        >
           <Image
             src={computerImage}
             alt="computer icon"
@@ -25,7 +28,7 @@ export const GridLayout = () => {
         </Link>
       </div>
       <div className=" grid-content-format">
-        <Link href={href} className={linkFormat}>
+        <Link href={href1} className={styles.linkFormat}>
           <Image
             src={computerImage}
             alt="computer icon"
@@ -37,7 +40,7 @@ export const GridLayout = () => {
         </Link>
       </div>
       <div className=" grid-content-format">
-        <Link href={href} className={linkFormat}>
+        <Link href={href1} className={styles.linkFormat}>
           <Image
             src={computerImage}
             alt="computer icon"
@@ -50,7 +53,7 @@ export const GridLayout = () => {
         </Link>
       </div>
       <div className=" grid-content-format">
-        <Link href={href} className={linkFormat}>
+        <Link href={href1} className={styles.linkFormat}>
           <Image
             src={computerImage}
             alt="computer icon"
@@ -63,7 +66,7 @@ export const GridLayout = () => {
         </Link>
       </div>
       <div className=" grid-content-format">
-        <Link href={href} className={linkFormat}>
+        <Link href={href1} className={styles.linkFormat}>
           <Image
             src={computerImage}
             alt="computer icon"
@@ -76,7 +79,7 @@ export const GridLayout = () => {
         </Link>
       </div>
       <div className=" grid-content-format">
-        <Link href={href} className={linkFormat}>
+        <Link href={href1} className={styles.linkFormat}>
           <Image
             src={computerImage}
             alt="computer icon"

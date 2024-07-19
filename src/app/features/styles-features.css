@@ -1,11 +1,3 @@
-.image-hover-effect {
-  transition: transform 0.3s;
-}
-
-.image-hover-effect:hover {
-  transform: rotate(12deg);
-}
-
 .section-basic-styles1 {
   display: flex;
   flex-direction: row;
