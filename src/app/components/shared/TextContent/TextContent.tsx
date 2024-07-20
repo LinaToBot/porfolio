@@ -5,6 +5,7 @@ import styles from "./TextContent.module.css";
 
 interface TextContentProps {
   headingWhite?: string;
+  blinkingHeading?: string;
   heading1?: string;
   heading2?: string;
   paragraph?: string | React.ReactNode;
@@ -13,6 +14,7 @@ interface TextContentProps {
 
 export const TextContent: React.FC<TextContentProps> = ({
   headingWhite,
+  blinkingHeading,
   heading1,
   heading2,
   paragraph,
@@ -20,9 +22,13 @@ export const TextContent: React.FC<TextContentProps> = ({
 }) => {
   return (
     <div className={styles.content}>
-      {headingWhite ? (
-        <h1 className={`${space.className} ${styles.headingWhite} mb-[2rem]`}>
-          {headingWhite}
+      {headingWhite || blinkingHeading ? (
+        <h1
+          className={`${space.className} ${
+            headingWhite ? styles.headingWhite : styles.blinkingHeading
+          } mb-[2rem]`}
+        >
+          {headingWhite || blinkingHeading}
         </h1>
       ) : (
         <h1
