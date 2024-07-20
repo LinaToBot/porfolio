@@ -50,13 +50,13 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 0rem 5rem;
   }
   .responsivePage {
     display: flex;
     flex-direction: row;
     width: 100%;
     min-height: 85vh;
+    padding: 0 5rem;
   }
   .responsiveDiv {
     display: flex;
