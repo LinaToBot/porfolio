@@ -1,3 +1,4 @@
+/*DEFAULT STYLES*/
 .linkFormat {
   display: flex;
   flex-direction: column;
@@ -17,10 +18,10 @@
 .sectionGrid {
   display: grid;
   height: 100%;
-  width: 80vw;
+  width: 100%;
   justify-items: center;
   background-color: transparent;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(1, minmax(0, 1fr));
   padding: 0;
 }
 
@@ -28,4 +29,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*SMALL*/
+@media (min-width: 541px) and (max-width: 768px) {
+  .sectionGrid {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    justify-items: center;
+    background-color: transparent;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 2rem;
+  }
+}
+
+/*MEDIUM-LARGE-AND-EXTRA-LARGE*/
+@media (min-width: 769px) {
+  .sectionGrid {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    justify-items: center;
+    background-color: transparent;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 3rem;
+  }
 }
