@@ -1,0 +1,26 @@
+/*DEFAULT STYLES*/
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.65rem;
+  height: 8vh;
+  border-top: solid 0.12rem #343434;
+  background-color: #0e0e0e;
+}
+
+/*SMALL*/
+@media (min-width: 541px) and (max-width: 768px) {
+  .footerSection {
+    font-size: 1rem;
+  }
+}
+
+/*MEDIUM-LARGE-AND-EXTRA-LARGE*/
+@media (min-width: 769px) {
+  .footerSection {
+    font-size: 1.2rem;
+  }
+}
