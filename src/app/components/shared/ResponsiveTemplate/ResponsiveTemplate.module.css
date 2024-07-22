@@ -13,7 +13,7 @@
 }
 
 .responsiveImage {
-  padding: 5rem;
+  padding: 1.5rem 0 5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +60,7 @@
     align-items: center;
   }
   .responsiveImage {
-    padding: 6.5rem;
+    padding: 2rem;
     display: flex;
     justify-content: center;
     width: 50%;

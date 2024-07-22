@@ -23,7 +23,7 @@ body {
   color: rgb(var(--foreground-rgb));
   .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0;
     background-color: #2c2c2c;
     position: fixed;
@@ -33,7 +33,11 @@ body {
     left: 0;
     color: rgb(var(--foreground-rgb));
   }
-
+  @media (min-width: 450px) {
+    .header {
+      justify-content: start;
+    }
+  }
   main {
     display: flex;
     margin: 10vh 0 0 0;

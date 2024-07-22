@@ -1,0 +1,22 @@
+.container {
+  font-size: 3rem;
+  width: 100%;
+  padding: 2rem;
+  color: #fff;
+}
+
+/*SMALL*/
+@media (min-width: 541px) and (max-width: 768px) {
+  .container {
+    font-size: 5rem;
+    padding: 5rem;
+  }
+}
+
+/* MEDIUM, LARGE, EXTRA-LARGE */
+@media (min-width: 769px) {
+  .container {
+    font-size: 8rem;
+    padding: 10rem;
+  }
+}
