@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
 // Components.
 import { Header } from "./components/shared/Header/Header";
+import { FooterSwitcher } from "./components/shared/Footer/Footer";
 // Styles.
 import "./styles/globals.css";
 import "./features/styles-features.css";
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className={`${roboto.className}  min-w-screen h-[100%]`}>
         <Header />
         {children}
+        <FooterSwitcher />
       </body>
     </html>
   );

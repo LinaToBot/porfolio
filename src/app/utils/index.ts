@@ -15,4 +15,10 @@ import { Space_Grotesk } from "next/font/google";
 /*EXTRA-LARGE*/
 ("@media (min-width: 1200px) {}");
 
+// Title Fonts
 export const space = Space_Grotesk({ subsets: ["latin"] });
+
+// URL's.
+export const linkedinURL = "https://www.linkedin.com/in/paulina-i-5a7174ba/";
+export const mediumURL = "https://medium.com/@lina2bot";
+export const gitHubURL = "https://github.com/LinaToBot";

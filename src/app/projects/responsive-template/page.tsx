@@ -2,7 +2,6 @@
 import Image from "next/image";
 // Component.
 import { TextContent } from "@/app/components/shared/TextContent";
-import { Footer } from "@/app/components/shared/Footer/Footer";
 // Public.
 import design from "../../../../public/responsive_design.png";
 import widthImage from "../../../../public/flexible-width.png";
@@ -81,7 +80,6 @@ const ResponsivePage: React.FC = () => {
           />
         </div>
       </div>
-      <Footer />
     </>
   );
 };
