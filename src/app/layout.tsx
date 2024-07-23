@@ -7,7 +7,6 @@ import { Header } from "./components/shared/Header/Header";
 import { FooterSwitcher } from "./components/shared/Footer/Footer";
 // Styles.
 import "./styles/globals.css";
-import "./features/styles-features.css";
 import "./components/AnimatedGrid/styles.css";
 
 const roboto = Roboto_Mono({ subsets: ["latin"] });
