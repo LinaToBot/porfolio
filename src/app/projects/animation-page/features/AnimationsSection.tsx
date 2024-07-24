@@ -3,7 +3,7 @@ import Link from "next/link";
 // Fonts.
 import { Space_Grotesk } from "next/font/google";
 // Components.
-import { AnimatedGrid } from "../components/AnimatedGrid/AnimatedGrid";
+import { AnimatedGrid } from "@/app/components/AnimatedGrid/AnimatedGrid";
 
 const space = Space_Grotesk({ subsets: ["latin"] });
 
