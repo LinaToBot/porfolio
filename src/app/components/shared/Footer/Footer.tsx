@@ -16,7 +16,7 @@ const FooterHome: React.FC = () => {
   return (
     <footer className={styles.footerSection}>
       <p className="text-center">
-        &copy; 2024 Lina2Bot. Todos los derechos reservados. Icons by{" "}
+        &copy; 2024 Lina2Bot. All rights reserved. Icons by{" "}
         <a href="https://icons8.com/" target="_blank" rel="noopener noreferrer">
           icons8.com
         </a>
@@ -29,7 +29,7 @@ const FooterSecondary: React.FC = () => {
   return (
     <footer className={styles.footerSection2}>
       <p className={styles.footerText}>
-        &copy; 2024 Lina2Bot. Todos los derechos reservados. Icons by{" "}
+        &copy; 2024 Lina2Bot. All rights reserved. Icons by{" "}
         <a href="https://icons8.com/" target="_blank" rel="noopener noreferrer">
           icons8.com
         </a>{" "}
