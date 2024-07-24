@@ -1,0 +1,88 @@
+.listSection {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  height: 100%;
+  width: 95%;
+  padding: 0;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.taskList {
+  background-color: #1b1b1b;
+  box-shadow: 5px 4px 10px 3px #9646a8c4;
+  height: 50vh;
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid #cb48e82b;
+}
+
+.task {
+  display: flex;
+  border-bottom: solid 1px #cb48e8;
+  height: 3rem;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.taskDiv {
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  gap: 2rem;
+}
+
+.toggle {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 1.3rem;
+  height: 1.3rem;
+  min-width: 1.3rem;
+  min-height: 1.3rem;
+  border: 1.5px solid #cb48e8;
+  background-color: #cb48e827;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+
+.toggle:checked {
+  border-color: 2px #cb48e8;
+  background-color: #cb48e8af;
+}
+
+.toggle:checked::after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 6px;
+  height: 12px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.destroy {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ff0000b0;
+  font-weight: 900;
+}

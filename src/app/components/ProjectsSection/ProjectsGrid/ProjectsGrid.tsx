@@ -9,6 +9,7 @@ import styles from "./ProjectsGrid.module.css";
 export const GridLayout = () => {
   const href1 = "/coming-soon-page";
   const href2 = "/projects/responsive-template";
+  const href3 = "/projects/to-do";
   const pStyles = "mb-[2rem]";
 
   return (
@@ -30,7 +31,7 @@ export const GridLayout = () => {
       </div>
       <div className={styles.gridContentFormat}>
         <Link
-          href={href1}
+          href={href3}
           className={`${styles.linkFormat} ${styles.imageHoverEffect}`}
         >
           <Image
