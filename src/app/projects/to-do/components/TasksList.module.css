@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   min-height: 50vh;
-  height: 100%;
+  height: fit-content;
   width: 95%;
   padding: 0;
   margin-top: 1.5rem;
@@ -13,9 +13,10 @@
 }
 
 .taskList {
+  height: fit-content;
+  min-height: 50vh;
   background-color: #1b1b1b;
   box-shadow: 5px 4px 10px 3px #9646a8c4;
-  height: 50vh;
   width: 100%;
   border-radius: 1rem;
   border: 1px solid #cb48e82b;
@@ -24,26 +25,26 @@
 .task {
   display: flex;
   border-bottom: solid 1px #cb48e8;
-  height: 3rem;
+  min-height: 3rem;
+  height: auto;
   align-items: center;
   width: 100%;
   padding: 2rem;
   gap: 2rem;
+  list-style: none;
 }
 
 .taskDiv {
   display: flex;
-  height: 3rem;
   align-items: center;
   width: 100%;
   padding: 0;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .toggle {
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 1.3rem;
@@ -75,8 +76,18 @@
   border-width: 0 2px 2px 0;
 }
 
+.labelInput {
+  flex: 1;
+  word-wrap: break-word;
+  white-space: normal;
+  word-break: break-all;
+}
 .completed {
   text-decoration: line-through;
+  flex: 1;
+  word-wrap: break-word;
+  white-space: normal;
+  word-break: break-all;
 }
 
 .destroy {

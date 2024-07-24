@@ -1,5 +1,5 @@
 // Module styles.
-import styles from "./TassksList.module.css";
+import styles from "./TasksList.module.css";
 
 interface Task {
   name: string;
@@ -29,7 +29,11 @@ export const TasksList: React.FC<TasksListProps> = ({
                 checked={task.isCompleted}
                 onChange={() => onToggleTaskCompletion(index)}
               />
-              <label className={task.isCompleted ? styles.completed : ""}>
+              <label
+                className={
+                  task.isCompleted ? styles.completed : styles.labelInput
+                }
+              >
                 {task.name}
               </label>
             </div>
